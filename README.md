@@ -20,7 +20,7 @@ Requires WinLIRC to be installed and configured by the user - this client progra
 ```
 
 - `key_timeout`: Timeout in milliseconds before the last received key is considered released (while no new commands received, otherwise release event is handled by the client automatically). This value should be at least 10-20% bigger than the time delay between IR commands your remote sends.
-- `key_repeat_delay`: A delay before keys begin to repeat, measured in the number of received commands.
+- `key_repeat_delay`: A delay before keys begin to repeat, measured in the number of received commands. For this function to work corretly, WinLRC must corretly handle key repeats, increasing the key_repeat counter in each data packet it sends to the clients.
 - `lirc_host`: Address of the WinLIRC server.
 - `lirc_port`: TCP/IP port.
 - `lirc_rc_attempts`: Number of attempts this client will perform trying to connect/reconnect to the server. 0 = unlimited.
