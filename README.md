@@ -51,7 +51,7 @@ If you experience slowness, delays, lags, or weird behavior of this program or W
 1. Set their process priorities to REALTIME.
    - This solves all the issues.
    - Don't worry about CPU usage; both WinLIRC and this client consume virtually no system resources.
-2. You can do this automatically using Process Hacker or System Explorer programs (they can "save" the process priorities).
+2. You can do this automatically using Process Hacker or System Informer programs (they can "save" the process priorities).
 
 ## Note
 
